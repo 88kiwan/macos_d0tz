@@ -1,0 +1,25 @@
+[user]
+  name = Wael Kiwan
+  username = 88kiwan
+  email = waelkiwan88@gmail.com
+  signingKey = 0xD4D0394E92F6D87C
+
+[core]
+  editor = $EDITOR
+	 excludesfile = ~/.gitignore
+
+[commit]
+  gpgSign = true
+
+[pull]
+  rebase = false
+
+[init]
+	defaultBranch = main
+
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+
