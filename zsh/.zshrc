@@ -38,13 +38,12 @@ eval $(gdircolors -b $DTZ_DIR/dir_colors)
 alias vi='nvim'
 alias sudo='sudo '
 alias code='code-insiders'
-alias .='cd' .2='cd ../..' .3='../../..'
+alias ...='cd ../..'
 alias rm='rm -r' cp='cp -r' mk='mkdir -p'
 alias ls='gls --color -h --group-directories-first' la='ls -A'
 alias grep='grep --color=auto' egrep='egrep --color=auto' fgrep='fgrep --color=auto'
 
 # Functions
-hyf() {cd "$HOME"/Documents/HYF/module_"$1"/week"$2"}
 cl() {cd "$1" && la;}
 bak() {cp -r "$1"{,.bak};}
 goto() {[ -d "$1" ] && cd "$1" || cd "$(dirname "$1")";}
