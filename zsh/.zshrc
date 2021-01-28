@@ -77,6 +77,7 @@ ext() {
 ## Plugins
 source $ZPLUGS/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZPLUGS/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666,bold,underline"
 bindkey '^ ' autosuggest-execute
 source $ZPLUGS/zsh-history-substring-search/zsh-history-substring-search.zsh
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="bg=cyan,fg=black,bold"
@@ -144,3 +145,4 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
 	eval "$(<$XDG_CACHE_HOME/ssh-agent)" >/dev/null
 fi
 
+cd ~/Desktop
