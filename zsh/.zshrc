@@ -1,6 +1,6 @@
 # GnuPG
 export GPG_TTY="$(tty)"
-export GPGKEY="0x8D1A763E194CB3D5"
+export GPGKEY="0x13BBA172DF6DAEA5"
 
 # Prompt
 [ -r "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh" ] && \. $XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh
@@ -33,6 +33,9 @@ setopt HIST_EXPIRE_DUPS_FIRST
 
 # LS Colors
 eval $(gdircolors -b $DTZ_DIR/dir_colors)
+
+# End of line char.
+PROMPT_EOL_MARK=''
 
 # Aliases
 alias vi='nvim'
