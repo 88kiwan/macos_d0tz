@@ -1,5 +1,11 @@
-# Add to path
-typeset -U path
-path+=(/opt/homebrew/bin /opt/homebrew/sbin \
-	/usr/local/opt/coreutils/libexec/gnubin $DTZ_DIR/scripts)
+# Set
+typeset -U PATH path
+path=($BREW_HOME/bin $BREW_HOME/sbin \
+	$HOME/Library/Python/3.9/bin \
+	$HOME/.local/bin \
+	$DTZ_DIR/scripts \
+	$path)
+
+# Export
+export PATH
 
