@@ -40,7 +40,6 @@ PROMPT_EOL_MARK=''
 # Aliases
 alias vi='nvim'
 alias sudo='sudo '
-alias code='code-insiders'
 alias ...='cd ../..'
 alias rm='rm -r' cp='cp -r' mk='mkdir -p'
 alias ls='gls --color -h --group-directories-first' la='ls -A'
