@@ -1,6 +1,5 @@
 " General
 syntax on
-set number
 set fcs=eob:\ 
 set cursorline
 set termguicolors
@@ -8,6 +7,7 @@ set showmatch mat=2
 set pastetoggle=<F2>
 set hlsearch incsearch
 set ignorecase smartcase
+set number relativenumber
 set guicursor+=a:blinkon1
 set clipboard+=unnamedplus
 set autoindent smartindent
@@ -47,5 +47,12 @@ endfunction
 augroup BWCCreateDir
   autocmd!
   autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+augroup END
+
+" Automatic toggling between line number modes
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
 
