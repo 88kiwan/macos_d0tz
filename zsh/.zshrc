@@ -144,5 +144,3 @@ if [[ ! "$SSH_AUTH_SOCK" ]]; then
 	eval "$(<$XDG_CACHE_HOME/ssh-agent)" >/dev/null
 fi
 
-cd ~/Desktop
-
