@@ -1,7 +1,3 @@
-# GnuPG
-export GPG_TTY="$(tty)"
-export GPGKEY="0x13BBA172DF6DAEA5"
-
 # Prompt
 [ -r "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh" ] && \. $XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh
 source $ZDOTDIR/.p10k && source $ZPLUGS/powerlevel10k/powerlevel10k.zsh-theme
@@ -135,12 +131,4 @@ bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
-
-# SSH agent
-if ! pgrep -u "$USER" ssh-agent >/dev/null; then
-	ssh-agent > $XDG_CACHE_HOME/ssh-agent
-fi
-if [[ ! "$SSH_AUTH_SOCK" ]]; then
-	eval "$(<$XDG_CACHE_HOME/ssh-agent)" >/dev/null
-fi
 
