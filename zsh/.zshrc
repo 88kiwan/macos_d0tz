@@ -1,3 +1,6 @@
+# GnuPG
+export GPG_TTY="$(tty)"
+
 # Prompt
 [ -r "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh" ] && \. $XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh
 source $ZDOTDIR/.p10k && source $ZPLUGS/powerlevel10k/powerlevel10k.zsh-theme
