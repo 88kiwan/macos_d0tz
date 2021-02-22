@@ -1,15 +1,15 @@
 [user]
-  name = Wael Kiwan
-  username = 88kiwan
-  email = waelkiwan88@gmail.com
-  signingKey = 0x13BBA172DF6DAEA5
+	name = Wael Kiwan
+	username = 88kiwan
+	email = waelkiwan88@gmail.com
+	signingKey = 0x13BBA172DF6DAEA5
 
 [core]
-  editor = $EDITOR
-	 excludesfile = ~/.gitignore
+	editor = nvim
+	excludesfile = ~/.gitignore
 
 [commit]
-  gpgSign = true
+	gpgSign = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

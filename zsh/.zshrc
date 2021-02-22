@@ -1,5 +1,8 @@
 # GnuPG
 export GPG_TTY="$(tty)"
+export GPGKEY="0x13BBA172DF6DAEA5"
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
 
 # Prompt
 [ -r "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh" ] && \. $XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh
