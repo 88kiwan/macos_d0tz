@@ -24,7 +24,7 @@
   # The list of segments shown on the right.
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     vcs                     # git status
-    #node_version            # node.js version
+    node_version            # node.js version
     #package                 # name@version from package.json (https://docs.npmjs.com/files/package.json)
   )
 
