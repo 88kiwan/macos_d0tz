@@ -3,7 +3,7 @@
 RESET="\033[0m"
 RED="\033[1;31m"
 YELLOW="\033[1;33m"
-GIT_PATH="git -C ${HOME}/GitHub/$1"
+GIT_PATH="git -C $1"
 DIRTY_FILES=$(${GIT_PATH} status --porcelain | awk '{print $2}')
 ACTIVE_BRANCH=$(${GIT_PATH} branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
