@@ -25,7 +25,7 @@
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     vcs                     # git status
     node_version            # node.js version
-    #package                 # name@version from package.json (https://docs.npmjs.com/files/package.json)
+    package                 # name@version from package.json (https://docs.npmjs.com/files/package.json)
   )
 
   # Defines character set used by powerlevel10k.
