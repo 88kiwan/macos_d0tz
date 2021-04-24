@@ -2,7 +2,7 @@
 	name = Wael Kiwan
 	username = 88kiwan
 	email = waelkiwan88@gmail.com
-	signingKey = 0x13BBA172DF6DAEA5
+	signingKey = 0xD01B5CDECF75E18B
 
 [core]
 	editor = nvim

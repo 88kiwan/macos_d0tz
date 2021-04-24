@@ -1,6 +1,6 @@
 # GnuPG
 export GPG_TTY="$(tty)"
-export GPGKEY="0x13BBA172DF6DAEA5"
+export GPGKEY="0xD01B5CDECF75E18B"
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 
@@ -44,6 +44,7 @@ alias vi='nvim'
 alias sudo='sudo '
 alias ...='cd ../..'
 alias rm='rm -r' cp='cp -r' mk='mkdir -p'
+alias sqlup='mysql.server start > /dev/null' sqlstop='mysql.server stop > /dev/null'
 alias ls='gls --color -h --group-directories-first' la='ls -A'
 alias grep='grep --color=auto' egrep='egrep --color=auto' fgrep='fgrep --color=auto'
 
