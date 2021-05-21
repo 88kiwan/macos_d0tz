@@ -44,9 +44,10 @@ alias vi='nvim'
 alias sudo='sudo '
 alias ...='cd ../..'
 alias rm='rm -r' cp='cp -r' mk='mkdir -p'
-alias sqlup='mysql.server start > /dev/null' sqlstop='mysql.server stop > /dev/null'
 alias ls='gls --color -h --group-directories-first' la='ls -A'
 alias grep='grep --color=auto' egrep='egrep --color=auto' fgrep='fgrep --color=auto'
+alias sqlup='brew services start mysql > /dev/null' sqlstop='brew services stop mysql > /dev/null' sql='mycli -u $USER'
+alias mngoup='brew services start mongodb-community > /dev/null' mngostop='brew services stop mongodb-community > /dev/null'
 
 # Functions
 cl() {cd "$1" && la;}

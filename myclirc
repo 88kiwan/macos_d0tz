@@ -1,0 +1,46 @@
+[main]
+smart_completion = True
+multi_line = False
+destructive_warning = True
+log_file = ~/.cache/mycli.log
+log_level = NONE
+timing = False
+table_format = double
+syntax_style = monokai
+key_bindings = vi
+wider_completion_menu = False
+prompt = '\d\n❯ '
+prompt_continuation = '->'
+less_chatty = True
+login_path_as_host = False
+auto_vertical_output = False
+keyword_casing = auto
+enable_pager = True
+pager = 'nvim'
+
+[colors]
+completion-menu.completion.current = 'bg:#64d1fc #111111'
+completion-menu.completion = 'bg:#011623 #cccccc'
+completion-menu.meta.completion.current = '#111111'
+completion-menu.meta.completion = '#cccccc'
+completion-menu.multi-column-meta = '#111111'
+scrollbar.arrow = ''
+scrollbar = ''
+selected = '#cccccc'
+search = '#cccccc'
+search.current = '#cccccc'
+bottom-toolbar = '#999999'
+bottom-toolbar.off = '#555555'
+bottom-toolbar.on = '#999999'
+search-toolbar = ''
+search-toolbar.text = ''
+system-toolbar = ''
+arg-toolbar = ''
+arg-toolbar.text = ''
+bottom-toolbar.transaction.valid = '#00ff5f bold'
+bottom-toolbar.transaction.failed = '#ff005f bold'
+output.header = "#c792ea bold"
+output.odd-row = "#69c65f"
+output.even-row = "#99c794"
+output.null = "#fc768c"
+
