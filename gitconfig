@@ -6,6 +6,7 @@
 
 [core]
 	editor = nvim
+	ignorecase = false
 	excludesfile = ~/.d0tz/gitignore
 
 [commit]
